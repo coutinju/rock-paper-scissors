@@ -1,0 +1,25 @@
+@import "common-variables";
+@import "common-classes";
+
+
+#scoreboard {
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    font-size: 5em;
+    font-weight: bold;
+
+    span {
+        cursor: default;
+    }
+    
+    #player1-score {
+        color: $player1Color;
+    }
+    #separator {
+        color: #555555;
+    }
+    #player2-score {
+        color: $player2Color;
+    }
+}

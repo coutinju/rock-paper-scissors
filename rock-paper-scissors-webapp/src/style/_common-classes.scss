@@ -1,0 +1,20 @@
+.bottom {
+    position: absolute;
+    bottom: 15px;
+}
+
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+// TODO
+.common-shadow > svg > path {
+    border: 1px solid #000000;
+    stroke: black;
+    stroke-width: 10;
+}

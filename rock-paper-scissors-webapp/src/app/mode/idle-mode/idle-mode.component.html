@@ -1,0 +1,7 @@
+<div id="idle" class="bottom">
+    <fa-stack [ngSwitch]="mode | async">
+        <fa-icon class="gamepad fa-3x" [icon]="['fas', 'gamepad']" stackItemSize="1x" (click)="onIdleChange()"></fa-icon>
+        <fa-icon class="cogs fa-3x" [icon]="['fas', 'cogs']" stackItemSize="1x" *ngSwitchCase="modeEnum.TRANSIENT"></fa-icon>
+        <fa-icon class="times fa-3x" [icon]="['fas', 'times']" stackItemSize="1x" *ngSwitchCase="modeEnum.IDLE" (click)="onIdleChange()"></fa-icon>
+    </fa-stack>
+</div>

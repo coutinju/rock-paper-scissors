@@ -1,0 +1,12 @@
+<div id="scoreboard" class="bottom row unselectable">
+    <div id="player1-score" [ngSwitch]="mode | async">
+        <fa-icon [icon]="['fas', 'user']" *ngSwitchCase="modeEnum.MANUAL"></fa-icon>
+        <fa-icon [icon]="['fas', 'robot']" *ngSwitchDefault></fa-icon>
+        <span>{{player1Score | async}}</span>
+    </div>
+    <div id="separator"><span>-</span></div>
+    <div id="player2-score">
+        <span>{{player2Score | async}}</span>
+        <fa-icon [icon]="['fas', 'robot']"></fa-icon>
+    </div>
+</div>

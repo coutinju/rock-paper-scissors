@@ -1,0 +1,21 @@
+### WEB APP
+**/node
+**/node_modules
+**/target
+**/.scannerwork
+**/*.log
+**/.vscode
+**/coverage
+
+### REST
+**/target
+**/dist
+**/.mvn/timing.properties
+**/.mvn/wrapper/maven-wrapper.jar
+**/.idea
+**/*.iml
+**/.settings
+
+### PARENT
+**/.setting
+**/.project
