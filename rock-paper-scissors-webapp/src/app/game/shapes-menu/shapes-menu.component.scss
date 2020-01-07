@@ -1,0 +1,19 @@
+@import "common-classes";
+
+
+#shapes {
+    right: 15px;
+    width: 200px;
+    svg {
+        // TODO: to remove when help implemented
+        // circle:hover, circle + text:hover,
+        path:hover, path + text:hover {
+            fill: #fce57e;
+        }
+        cursor: pointer;
+        text {
+            font-family: 'Font Awesome 5 Free', sans-serif;
+            font-weight: 900;
+        }
+    }
+}

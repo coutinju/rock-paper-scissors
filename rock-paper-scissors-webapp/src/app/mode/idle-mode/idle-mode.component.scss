@@ -1,0 +1,19 @@
+@import "common-classes";
+
+#idle {
+    margin-left: 25px;
+
+    .gamepad {
+        // TODO: make the cursor a pointer
+        // svg { 
+        //     cursor: pointer;
+        // }
+        color: #629755;
+    }
+    .times {
+        color: tomato;
+    }
+    .cogs {
+        color: saddlebrown;
+    }
+}

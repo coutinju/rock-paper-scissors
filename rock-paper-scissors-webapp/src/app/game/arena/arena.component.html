@@ -1,0 +1,14 @@
+<div id="arena" class="row">
+    <div id="player1-choice" class="col-6" [ngSwitch]="player1Shape | async">
+        <fa-icon class="fa-10x float-left" transform="rotate-90" [icon]="['fas', 'hand-rock']" *ngSwitchDefault></fa-icon>
+        <fa-icon class="fa-10x float-left" transform="rotate-90" [icon]="['fas', 'hand-paper']" *ngSwitchCase="shapeEnum.PAPER"></fa-icon>
+        <fa-icon class="fa-10x float-left" transform="rotate-90" [icon]="['fas', 'hand-rock']" *ngSwitchCase="shapeEnum.ROCK"></fa-icon>
+        <fa-icon class="fa-10x float-left" transform="rotate-180" flip="vertical" [icon]="['fas', 'hand-scissors']" *ngSwitchCase="shapeEnum.SCISSORS"></fa-icon>
+    </div>
+    <div id="player2-choice" class="col-6" [ngSwitch]="player2Shape | async">
+        <fa-icon class="fa-10x float-right" transform="rotate--90" flip="vertical" [icon]="['fas', 'hand-rock']" *ngSwitchDefault ></fa-icon>
+        <fa-icon class="fa-10x float-right" transform="rotate--90" flip="vertical" [icon]="['fas', 'hand-paper']" *ngSwitchCase="shapeEnum.PAPER"></fa-icon>
+        <fa-icon class="fa-10x float-right" transform="rotate--90" flip="vertical" [icon]="['fas', 'hand-rock']" *ngSwitchCase="shapeEnum.ROCK" ></fa-icon>
+        <fa-icon class="fa-10x float-right" [icon]="['fas', 'hand-scissors']" *ngSwitchCase="shapeEnum.SCISSORS"></fa-icon>
+    </div>
+</div>

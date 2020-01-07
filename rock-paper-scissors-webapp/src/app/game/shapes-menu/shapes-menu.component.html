@@ -1,0 +1,24 @@
+<div id="shapes" class="bottom unselectable">
+    <svg width="200" height="200" viewBox="0 0 200 200">
+        <g transform="translate(100,100)" stroke="#555555" stroke-width="2"
+                *ngFor="let sector of sectors" (click)="onShapeSelected(sector.shape)"
+                [ngSwitch]="sector.shape" [id]="'shapes-svg-g-' + sector.shape">
+            <path [attr.d]="sector.path" fill="#343434"/>
+            <text [attr.x]="sector.symbolPosition.x" [attr.y]="sector.symbolPosition.y" 
+                    fill="#a9b7c6" text-anchor="middle" alignment-baseline="middle"
+                    font-size="40px" *ngSwitchCase="shapeEnum.ROCK">&#xf255;</text>
+            <text [attr.x]="sector.symbolPosition.x" [attr.y]="sector.symbolPosition.y" 
+                    fill="#a9b7c6" text-anchor="middle" alignment-baseline="middle"
+                    font-size="40px"  *ngSwitchCase="shapeEnum.PAPER">&#xf256;</text>
+            <text [attr.x]="sector.symbolPosition.x" [attr.y]="sector.symbolPosition.y" 
+                    fill="#a9b7c6" text-anchor="middle" alignment-baseline="middle"
+                    font-size="40px"  *ngSwitchCase="shapeEnum.SCISSORS">&#xf257;</text>
+        </g>
+        <g stroke="#555555" stroke-width="2">
+            <circle cx="100" cy="100" r="30" fill="#343434"/>
+            <!-- TODO: Add help icon and display arrows to explain which shape bets which one while hovering -->
+            <!-- <text x="100" y="100" text-anchor="middle"  alignment-baseline="middle" 
+                    fill="#555555" font-size="30px">&#xf128;</text> -->
+        </g>
+    </svg>
+</div>

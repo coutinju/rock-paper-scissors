@@ -1,0 +1,12 @@
+@import "common-variables";
+
+#arena {
+    #player1-choice {
+        padding-left: 10%;
+        color: $player1Color;
+    }
+    #player2-choice {
+        padding-right: 10%;
+        color: $player2Color;
+    }
+}
