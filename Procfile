@@ -1,0 +1,1 @@
+web: java -jar rock-paper-scissors-rest/target/dependency/webapp-runner.jar --port $PORT rock-paper-scissors-rest/target/rock-paper-scissors.war
